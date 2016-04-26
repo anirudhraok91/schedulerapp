@@ -7,6 +7,11 @@ class ContactsController < ApplicationController
        @contact = Contact.new(contact_params)
        
        if @contact.save
+           name = params[:contact][:name]
+           email = params[:contact][:email]
+           password = params[:contact][:password]
+           
+           ContactMailer.contact_email(name, email, password).deliver
            flash[:success] = 'Sign in successful'
            redirect_to new_contact_path
        else
