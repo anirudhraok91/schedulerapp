@@ -7,9 +7,11 @@ class ContactsController < ApplicationController
        @contact = Contact.new(contact_params)
        
        if @contact.save
-           redirect_to new_contact_path, notice: "New user created"
+           flash[:success] = 'Sign in successful'
+           redirect_to new_contact_path
        else
-           redirect_to new_contact_path, notice: "Fail DA"
+           flash[:danger] = 'Fail DA'
+           redirect_to new_contact_path
        end
    end
    
