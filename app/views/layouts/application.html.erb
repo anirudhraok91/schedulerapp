@@ -51,6 +51,10 @@
       </form>
       
       <ul class="nav navbar-nav navbar-right">
+        <% if user_signed_in? %>
+          <%= current_user.email %>
+          <%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>
+        <% end %>
         <li><%= link_to "About", about_path %></li>
         <li><%= link_to "Contact Us", new_contact_path %></li>
         <li><%= link_to "Lecture", new_lecture_path %></li>
@@ -69,12 +73,7 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<div id="user_nav">
-    <% if user_signed_in? %>
-        Signed in as <%= current_user.email %>. This cannot be cheese?
-        <%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>
-    <% end %>
-</div>
+
 
 <div class = "container">
   <% flash.each do |key, value| %>
