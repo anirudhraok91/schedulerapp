@@ -9,16 +9,18 @@ development:
   adapter: postgresql
   encoding: unicode
   database: mydb
+  template: template0
   pool: 5
   timeout: 5000
-  username: postgres
-  password: password
+  username: user
+  password: user
   min_messages: WARNING
 
 test:
   host: localhost
   adapter: sqlite3
   database: db/test.sqlite3
+  template: template0
   pool: 5
   timeout: 5000
 
@@ -26,10 +28,11 @@ production:
   adapter: postgresql
   encoding: unicode
   database: mydb
+  template: template0
   pool: 5
   timeout: 5000
-  username: postgres
-  password: password
+  username: user
+  password: user
   host: 127.0.0.1
   port: 5432
   min_messages: WARNING
