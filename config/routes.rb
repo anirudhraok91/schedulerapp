@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   
-  root 'pages#about'
   devise_for :users
   get '/about' => 'pages#about'
   
+  root 'pages#home'
   resources :contacts
   resources :lectures
   # The priority is based upon order of creation: first created -> highest priority.
