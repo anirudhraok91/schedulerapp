@@ -11,14 +11,14 @@
       <h2 class="text-center">Basic Membership</h2>
       <h4>Free Sign up for students and Tutors.</h4>
       <br/>
-      <%= link_to "Sign up with Basic", new_user_registration_path, class: 'btn btn-primary btn-lg btn-block' %>
+      <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
     </div>
   </div>
   <div class="col-md-6">
     <div class="well">
       <h2 class="text-center">Pro Membership</h2>
       <h4>Admins Pro Plans, starting at $100 a month. Explore ScheduleIT for multiple domains and dozens of premium options.</h4>
-      <%= link_to "Sign up with Pro", new_user_registration_path, class: 'btn btn-success btn-lg btn-block' %>
+      <%= link_to "Sign up with Pro", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
     </div>
   </div>
 </div>
