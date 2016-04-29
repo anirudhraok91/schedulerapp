@@ -32,9 +32,9 @@ gem 'spring',        group: :development
 #Font awesome lib
 gem 'font-awesome-sass', '4.2.0'
 
-gem 'devise', '3.4.1'
+gem 'devise', '4.0.1'
 
-gem 'stripe', '1.16.1'
+gem 'stripe', '1.41.0'
 
 gem 'stripe_event'
 

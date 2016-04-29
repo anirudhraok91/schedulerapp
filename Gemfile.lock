@@ -39,12 +39,11 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.10.0)
-    devise (3.4.1)
+    devise (4.0.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
-      railties (>= 3.2.6, < 5)
+      railties (>= 4.1.0, < 5.1)
       responders
-      thread_safe (~> 0.1)
       warden (~> 1.2.3)
     domain_name (0.5.20160310)
       unf (>= 0.0.5, < 1.0.0)
@@ -122,9 +121,7 @@ GEM
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
     sqlite3 (1.3.11)
-    stripe (1.16.1)
-      json (~> 1.8.1)
-      mime-types (>= 1.25, < 3.0)
+    stripe (1.41.0)
       rest-client (~> 1.4)
     stripe_event (1.5.0)
       activesupport (>= 3.1)
@@ -152,7 +149,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (= 3.3.1)
   coffee-rails (= 4.0.0)
-  devise (= 3.4.1)
+  devise (= 4.0.1)
   figaro (= 1.0.0)
   font-awesome-sass (= 4.2.0)
   jbuilder (= 2.0)
@@ -163,7 +160,7 @@ DEPENDENCIES
   sdoc (= 0.4.0)
   spring
   sqlite3
-  stripe (= 1.16.1)
+  stripe (= 1.41.0)
   stripe_event
   uglifier (= 1.3.0)
 
