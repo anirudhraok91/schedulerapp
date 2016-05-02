@@ -39,6 +39,8 @@ gem 'stripe', '1.41.0'
 gem 'stripe_event'
 
 gem 'figaro', '1.0.0'
+
+gem 'paperclip', '4.3.6'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '3.1.7'
 # Use unicorn as the app server
